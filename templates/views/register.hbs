@@ -1,0 +1,42 @@
+{{>header}}
+{{>navbar}}
+<!-- Modal -->
+<form action="/register" method="POST">
+<div class="modal-content container">
+    <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Registration</h5>
+    </div>
+    <div class="modal-body">
+        <!-- Internal -->
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Enter Full Name" name="name" aria-label="Username"
+                aria-describedby="basic-addon1" />
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="email" placeholder="Enter Your Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="input-group mb-3">
+            <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                placeholder="Enter Your Number" name="number"/>
+        </div>
+        <div class="input-group mb-3">
+            <input type="password" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                placeholder="Enter Password" name="password"/>
+        </div>
+        <div class="input-group mb-3">
+            <input type="password" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+                placeholder="Confirm Password" name="cpassword"/>
+        </div>
+        <div class="modal-footer">
+            <input type="submit" class="btn btn-primary" value="Register">
+        </div>
+    </div>
+</div>
+</form>
+<br>
+<br>
+<br>
+{{>contact}}

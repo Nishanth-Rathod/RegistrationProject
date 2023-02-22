@@ -1,0 +1,15 @@
+=>password hasing
+const securePassword = async (password) => {
+  const HashedPassword = await bcrypt.hash(password, 10);
+  console.log(HashedPassword);
+  const PasswordMatch = await bcrypt.compare(password, HashedPassword);
+  console.log(PasswordMatch);
+};
+securePassword("nish345");
+$2a$10$04WuxqQVgHlnlKegJtMkvO4cZjJmlG9noMJJEOw3Eu81.18V14Gpa
+
+
+
+
+
+sIk3kB8KOf_zV05Y6dxsKUQ__GZSCf2_jcapWwk2Ruk
