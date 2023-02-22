@@ -1,0 +1,2 @@
+# RegistrationProject
+npm run dev
